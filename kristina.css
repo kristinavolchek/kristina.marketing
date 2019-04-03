@@ -1,0 +1,32 @@
+section.coming-soon-section {
+  padding-top: 1rem;
+}
+
+.coming-soon-content {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%);
+  width: 100%;
+}
+.coming-soon-content .title.coming-soon {
+  color: white;
+  text-transform: uppercase;
+  font-size: 96px;
+  margin-bottom: 50px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.social-links li:last-of-type {
+  margin: 0;
+}
+.social-links .social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=kristina.css.map */
