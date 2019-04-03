@@ -65,4 +65,12 @@ section.coming-soon-section {
 	.shape-bg {
 		display: none;
 	}
+	.social-links {
+		li {
+			margin-right: 20px;
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
 }
