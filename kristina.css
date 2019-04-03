@@ -30,4 +30,24 @@ section.coming-soon-section {
   height: 40px;
 }
 
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(147.4deg, #FF975C 11.05%, #F45257 77.53%), #F45257;
+    height: 100vh;
+  }
+
+  .coming-soon-content {
+    position: static;
+    transform: none;
+  }
+  .coming-soon-content .title.coming-soon {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+
+  .shape-bg {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=kristina.css.map */
