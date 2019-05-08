@@ -7,6 +7,70 @@
 // }
 
 
+// Helpers
+.lead {
+	font-size: 1.125rem;
+}
+
+.title-1 {
+	font-size: 2rem; 
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+}
+.title-2 {
+	font-size: 1.5rem; 
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+.title-3 {
+	font-size: 1.25rem; 
+	font-family: 'Hind', sans-serif;
+	font-weight: 600;
+}
+.text-l {
+	font-size: 1.125rem;
+	font-family: 'Hind', sans-serif;
+	font-weight: 400;
+}
+.text-m {
+	font-size: 1rem;
+	font-family: 'Hind', sans-serif;
+	font-weight: 400;
+}
+.text-s {
+	font-size: 0.875rem;
+	font-family: 'Hind', sans-serif;
+	font-weight: 400;
+}
+
+.button {
+	&.kristi-button {
+		border-radius: 5px;
+		font-family: 'Hind', sans-serif;
+		font-weight: 600;
+		font-size: 1rem;
+		text-transform: uppercase;
+		line-height: 26px;
+		letter-spacing: 0.05em;
+		width: 150px;
+		height: 48px;
+	}
+	&.kristi-bright {
+		background: linear-gradient(91.16deg, #FF975C 1.27%, #F45257 99.68%), #F45257;
+		box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+		color: white;
+		border: 1px solid transparent;
+	}
+	&.kristi-outlined {
+		border-color: #FF7D59;
+		border-width: 2px;
+		box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
+		color: #FF7D59;
+	}
+}
+
+
+
 .shape-bg {
 	// position: absolute;
 	// left: 50%;
@@ -32,6 +96,50 @@ section.coming-soon-section {
 		text-shadow: 6px 5px 18px rgba(0, 0, 0, 0.1), 2px 3px 4px rgba(0, 0, 0, 0.15);
 	}
 }
+
+header {
+	.logo {
+		width: 40px;
+	}
+}
+
+
+section.intro {
+	.title {
+		margin-bottom: 2.5rem;
+	}
+	.blurb {
+		margin-bottom: 2rem;
+	}
+	.certifications {
+		margin-bottom: 2.5rem;
+		p {
+			display: inline-block;
+			line-height: 2rem;
+			margin-right: 5px;
+		}
+		img {
+			vertical-align: middle;
+			position: relative;
+			bottom: 1px;
+			&.google-logo {
+				width: 76px;
+				margin-right: 10px;
+			}
+			&.hubspot-logo {
+				width: 80px;
+			}
+		}
+	}
+	.cta {
+		>:first-child {
+			margin-right: 2rem;
+		}
+	}
+}
+
+
+
 
 .social-links {
 	li {
