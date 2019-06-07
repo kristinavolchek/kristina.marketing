@@ -22,17 +22,40 @@
   
   <header class="section main-header">
     <div class="container">
-      <div class="top-bar">
-        <div class="logo">
-          <img src="assets/logo.png" alt="Kristina Marketing - Freelance Marketing Consultant">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://kristina.marketing">
+            <img src="assets/logo.png" alt="Kristina Marketing - Freelance Marketing Consultant">
+          </a>
+          <a role="button" class="navbar-burger burger" data-target="navbarMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-      </div>
+
+        <div class="navbar-menu" id="navbarMenu">
+          <div class="navbar-start">
+
+          </div>
+
+          <div class="navbar-end">
+            <a href="#about" class="navbar-item text-l">About</a>
+            <a href="#services" class="navbar-item text-l">Services</a>
+            <a href="#ecommerce" class="navbar-item text-l">eCommerce</a>
+            <a href="#contact" class="navbar-item text-l">Contact</a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
 
   <section class="intro section">
     <div class="container">
+      <div class="image-container">
+        <img src="assets/kristi-profile.jpg" alt="Kristi">
+      </div>
       <div class="columns">
         <div class="column is-half">
           
@@ -47,8 +70,8 @@
             </div>
 
             <div class="cta">
-              <a href="" class="button kristi-button kristi-bright">Hire me</a>
-              <a href="" class="button kristi-button kristi-outlined">About</a>
+              <a href="#contact" class="button kristi-button kristi-bright">Hire me</a>
+              <a href="#about" class="button kristi-button kristi-outlined">About</a>
             </div>
 
           </div>
@@ -59,20 +82,223 @@
 
   </section>
 
-  <section class="services section"></section>
-
-
-
-  <!-- <footer class="footer">
+  <section class="services section" id="services">
     <div class="container">
-      
+      <div class="columns is-multiline">
+        <div class="column is-3 is-offset-1 is-hidden-mobile">
+          <h2 class="title-2">How can I help?</h2>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <h3 class="title-3">Marketing Consulting</h3>
+          <p>Improving your Digital Marketing strategies and CRO of your digital assets to get results.</p>
+        </div>
+        <div class="column is-3 is-offset-1 is-hidden-mobile">
+          <h3 class="title-3">Marketing Workshop</h3>
+          <p>Training and onboarding your marketing team to gain real value from your efforts.</p>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <h3 class="title-3">Marketing Audit</h3>
+          <p>Analysing your digital data to get a clear insight into your marketing abilities and assets.</p>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <h3 class="title-3">Google & Social Advertising</h3>
+          <p>Developing successful promotional campaigns by using data and insight from each channel.</p>
+        </div>
+        <div class="column is-3 is-offset-1 is-hidden-mobile">
+          <h3 class="title-3">Email Marketing</h3>
+          <p>Developing a email strategy to achieve your objectives and grow engagement.</p>
+        </div>
+        <div class="column is-3 is-offset-1">
+          <h3 class="title-3">Website Optimization</h3>
+          <p>Improving your SEO and website UX to attract more visitors and optimize conversion rates. </p>
+        </div>
+        <div class="column is-3 is-offset-1 is-hidden-mobile">
+          <h3 class="title-3">Social Media Marketing</h3>
+          <p>Growing your social media presence to identify audiences unique to your business.</p>
+        </div>
+        <div class="column is-3 is-offset-1 is-hidden-mobile">
+          <h3 class="title-3">Web Design</h3>
+          <p>Creating custom web design that will boost your sales and engage target audience.</p>
+        </div>
+      </div>
     </div>
-  </footer> -->
+  </section>
+
+  <section class="section ecommerce" id="ecommerce">
+    <div class="container">
+      <h2 class="title-2">eCommerce Help</h2>
+      <div class="columns">
+      	<div class="column is-8">
+      		<p class="lead">You've launched your store but there's no traffic? Lots of traffic yet little sales? </p>
+		      <ul class="ecom-list">
+		        <li>CRO (Conversion Rate Optimization): UX review & auditing for optimizing sales </li>
+		        <li>Social media marketing: creation & posting on Facebook, Instagram</li>
+		        <li>Setup retargeting/remarketing tags to return your visitors and grow engagement </li>
+		        <li>Abandoned cart emails, Email Marketing (Mailchimp, HubSpot)</li>
+		        <li>Search Engine Optimization</li>
+		        <li>Paid advertising. Help with Google or Facebook & Instagram Ads</li>
+		        <li>Review Optimization: Google Customer Reviews setup, standalone reviews page, star ratings in search results and google MyBusiness, integration of Shopify GCR plugin</li>
+		      </ul>
+      	</div>
+      </div>
+      <img class="eclipse-ecom is-hidden-mobile" src="assets/eclipse-ecom.png" alt="">
+    </div>
+  </section>
+
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-5 is-hidden-mobile">
+          <img class="kristi-collage" src="assets/kristi-collage.jpg" alt="About Kristina Volchek">
+          <h3 class="text-l">Quick Facts about me</h3>
+          <ul class="quick-facts">
+            <li class=" text-m loves">Loves: Travel, Marketing, Photography, Wine</li>
+            <li class=" text-m languages">Languages: English, German, Polish, Russian </li>
+            <li class=" text-m sports">Sports: Yoga, Kickboxing, Weights, Bicycle</li>
+          </ul>
+        </div>
+        <div class="column is-7 about-content">
+          <h2 class="title-2">About</h2>
+          <p>I am obsessed with marketing and I can honestly say I love my job. </p>
+          <p>Most of my experience in marketing is in working for large multinational companies (VRP Consulting, Altoros, Cactussoft) as a director of marketing - managing a marketing team of over 50 people! I've also been a speaker for local workshops and events (Imaguru Coding Academy, Women in IT Week). </p>
+          <p>As of 2019 I’m starting a new chapter - becoming a freelance consultant so that I can work on projects that truly interest me.  I also want to support <strong>small businesses</strong> more, since this is where I can truly see the positive impact of my work. The most common problem for a small business is finding their voice and really getting their name out there while they are still new.</p>
+          <p><strong>  eCommerce</strong> is especially interesting - since partnering with a Shopify Developer on several projects, I noticed how relatively small changes can have a huge impact on the profitability of a store.</p>
+        </div>
+        <div class="column is-hidden-tablet">
+          <h3 class="title-3">Quick Facts about me</h3>
+          <ul class="quick-facts">
+            <li class="loves">Loves: Travel, Marketing, Photography, Wine</li>
+            <li class="languages">Languages: English, German, Polish, Russian </li>
+            <li class="sports">Sports: Yoga, Kickboxing, Weights, Bicycle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section certs">
+    <div class="container">
+      <h2 class="title-2">Certifications</h2>
+      <div class="logo-list columns is-mobile">
+        <div class="column is-half-mobile"><div class="logo-box"><img src="assets/hubspot-logo.png" alt="HubSpot Certified"></div></div>
+        <div class="column is-half-mobile"><div class="logo-box"><img src="assets/google-logo.png" alt="Google Ads Certified"></div></div>
+        <div class="column is-half-mobile"><div class="logo-box"><img src="assets/semrush-logo.png" alt="SEMRush Certified"></div></div>
+        <div class="column is-half-mobile"><div class="logo-box"><img src="assets/bing-ads-logo.png" alt="Bing Ads Certified"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="columns">
+        <div class="column contact-info">
+          <h2 class="title-2">Just say hi.</h2>
+          <p>Feel free to get in touch with me. I am always open to discuss your project, improve your digital experience or help with your marketing challenges.</p>
+          <div class="email">
+            <p class="text-s">Email me at</p>
+            <a class="text-l" href="mailto:hi@kristina.marketing">hi@kristina.marketing</a>
+          </div>
+          <div class="social">
+            <p class="text-s">Social</p>
+            <ul class="social-links">
+              <li><a href="https://www.linkedin.com/in/krzes/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://www.facebook.com/krisvolchek"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="instagram-adjust"><a href="https://www.instagram.com/kristismart/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="https://twitter.com/krisvolchek"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column contact-form">
+          <form action="https://formspree.io/hi@kristina.marketing" method="POST">
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="Name">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input" type="text" name="website" placeholder="Website">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <textarea name="message" id="" cols="30" rows="10" class="textarea" placeholder="How can I help?"></textarea>
+                </div>
+              </div>
+              <div class="field">
+                <div class="control has-text-right">
+                  <input class="button kristi-button kristi-bright is-medium" type="submit" value="Get in Touch">
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section">
+
+    <div class="columns">
+      <div class="column">
+        <div class="who">
+          <img class="logo" src="assets/logo.png" alt="Kristina Marketing - Freelance Marketing Consultant">
+          <p class="text-l jobtitle">Freelance Digital Marketing Consultant</p>
+        </div>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/krzes/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.facebook.com/krisvolchek"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="instagram-adjust"><a href="https://www.instagram.com/kristismart/"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://twitter.com/krisvolchek"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="footer-nav is-hidden-mobile">
+          <a href="#about" class="text-l">About</a>
+          <a href="#services" class="text-l">Services</a>
+          <a href="#ecommerce" class="text-l">eCommerce</a>
+        </div>
+        <p class="copyright">© 2019 Kristina Marketing</p>
+      </div>
+    </div>
+
+    
+    
+  </footer>
+
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
 
   </body>
 </html>
-
-
-
-
-<!-- https://www.flaticon.com/packs/glypho -->
