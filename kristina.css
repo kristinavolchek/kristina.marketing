@@ -16,6 +16,10 @@
   font-size: 1.125rem;
 }
 
+p, li, a, input, textarea {
+  font-family: "Hind", sans-serif;
+}
+
 .title-1 {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
@@ -77,12 +81,13 @@
 }
 
 .social-links li {
+  font-family: initial;
   display: inline-block;
   color: white;
   background: black;
   width: 1.8em;
   height: 1.8em;
-  line-height: 1.8em;
+  line-height: 1.9em;
   vertical-align: middle;
   text-align: center;
   font-size: 1.25em;
@@ -111,6 +116,7 @@
 
 header.section {
   padding-top: 3rem;
+  padding-bottom: 4rem;
 }
 header.section .navbar-brand .navbar-item img {
   max-height: none;
