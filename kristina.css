@@ -348,6 +348,9 @@ section.contact .contact-form .textarea {
   box-shadow: none;
   border-radius: 0;
 }
+section.contact .contact-form input {
+  height: 3em;
+}
 @media (max-width: 768px) {
   section.contact .contact-info .title-2 + p {
     margin-bottom: 2rem;

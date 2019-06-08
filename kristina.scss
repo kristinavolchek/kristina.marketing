@@ -415,6 +415,9 @@ section.contact {
 			box-shadow: none;
 			border-radius: 0;
 		}
+		input {
+			height: 3em;
+		}
 	}
 	@media (max-width: 768px) {
 		.contact-info {
