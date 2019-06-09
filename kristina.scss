@@ -19,6 +19,10 @@
 	font-size: 1.125rem;
 }
 
+body {
+	text-rendering: auto; // fixes android bug https://issuetracker.google.com/issues/36926023
+}
+
 p,li,a,input,textarea {
 	font-family: 'Hind', sans-serif;
 }
@@ -65,12 +69,18 @@ p,li,a,input,textarea {
 		letter-spacing: 0.05em;
 		width: 150px;
 		height: 48px;
+		transition: transform 0.2s ease-in-out;
+		&:hover {
+			-webkit-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			transform: scale(1.05);
+		}
 	}
 	&.kristi-bright {
 		background: linear-gradient(91.16deg, #FF975C 1.27%, #F45257 99.68%), #F45257;
 		box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.15);
 		color: white;
-		border: 1px solid transparent;
+		border: none;
 	}
 	&.kristi-outlined {
 		border-color: #FF7D59;
@@ -194,6 +204,10 @@ section.intro {
 
 section.services {
 	background-color: #FF7D59;
+	background-image: url('assets/services-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	color: white;
 	.column {
 		padding: 2rem .75rem;
@@ -201,6 +215,7 @@ section.services {
 	h3 {
 		margin-bottom: 1rem;
 		position: relative;
+		font-weight: bold;
 		&:before {
 			content: '';
 			display: inline-block;
@@ -227,6 +242,23 @@ section.services {
 
 section.ecommerce {
 	padding-bottom: 6.5rem;
+	position: relative;
+
+	.eclipse-ecom {
+		position: absolute;
+		top: 4rem;
+		right: 0;
+		width: 385px;
+		max-width: 30%;
+	}
+	.eclipse-ecom-2 {
+		position: absolute;
+    bottom: -6rem;
+    right: 0;
+    width: 220px;
+    max-width: 30%;
+	}
+
 	.container {
 		position: relative;
 	}
@@ -258,13 +290,6 @@ section.ecommerce {
 				background-position: center;
 			}
 		}
-	}
-	.eclipse-ecom {
-		position: absolute;
-		top: 2rem;
-		right: 0;
-		width: 385px;
-		max-width: 30%;
 	}
 }
 
@@ -438,6 +463,7 @@ section.contact {
 footer.section {
 	background: #F4F8FA;
 	padding-bottom: 4rem;
+	color: #a4a4a4;
 	.who {
 		margin-bottom: 4rem;
 		p.jobtitle {
@@ -459,7 +485,7 @@ footer.section {
 		text-align: right;
 		margin-bottom: 4rem;
 		a {
-			color: #4a4a4a;
+			color: #a4a4a4;
 			display: inline-block;
 			line-height: 1.5;
 			padding: .5rem .75rem;
