@@ -372,7 +372,11 @@ section.about {
 			font-size: 1.125rem;
 		}
 	}
-
+	@media (max-width: 768px) {
+		.about-content {
+			margin-top: 0;
+		}
+	}
 }
 
 section.certs {
