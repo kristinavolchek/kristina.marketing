@@ -23,6 +23,8 @@
     
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
+    <script aysnc src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.0/dist/smooth-scroll.min.js"></script>
+
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" href="favicon.ico?" type="image/x-icon">
@@ -85,8 +87,8 @@
             </div>
 
             <div class="cta">
-              <a href="#contact" class="button kristi-button kristi-bright">Hire me</a>
-              <a href="#about" class="button kristi-button kristi-outlined">About</a>
+              <a href="#contact" class="button kristi-button kristi-bright" data-scroll >Let's talk</a>
+              <a href="#about" class="button kristi-button kristi-outlined" data-scroll >About</a>
             </div>
 
           </div>
@@ -327,6 +329,12 @@
       }
 
     });
+
+    var scroll = new SmoothScroll('a[data-scroll]', {
+    	speed: 250
+    });
+
+
   </script>
 
   </body>
