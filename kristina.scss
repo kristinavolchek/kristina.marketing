@@ -1,4 +1,4 @@
-// sass --watch kristina.scss kristina.css
+// sass --watch kristina.scss:kristina.css
 
 
 $kristi-orange: #FF7075;
@@ -183,6 +183,10 @@ section.intro {
 			vertical-align: middle;
 			position: relative;
 			bottom: 1px;
+			transition: transform 0.2s ease-in-out;
+			&:hover {
+				transform: scale(1.05);
+			}
 			&.google-logo {
 				width: 76px;
 				margin-right: 10px;
