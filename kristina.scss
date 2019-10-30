@@ -271,6 +271,12 @@ section.portfolio {
 		border-radius: 30px;
 		overflow: hidden;
 		color: $kristi-text;
+		transition: transform 0.2s ease-in-out;
+		&:hover {
+			-webkit-transform: scale(1.01);
+			-ms-transform: scale(1.01);
+			transform: scale(1.01);
+		}
 		.work-image {
 			width: 100%;
 		}
